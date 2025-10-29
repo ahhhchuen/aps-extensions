@@ -18,6 +18,24 @@
             "includeinlist": "false"
         },
         {
+            "name": "BoundingBoxExtension",
+            "displayname": "Bounding Box",
+            "description": "Purpose of this extension is to draw a bounding box around each selected object.",
+            "options": {},
+            "viewerversion": "7.*",
+            "loadonstartup": "false",
+            "filestoload": {
+                "cssfiles": [
+                    "main.css"
+                ],
+                "jsfiles": [
+                    "main.js"
+                ]
+            },
+            "gif": "extension.gif",
+            "includeinlist": "true"
+        },
+        {
             "name": "CameraRotation",
             "displayname": "Camera Rotation",
             "description": "Rotates the model continously untill stopped, can be used for demoing a large model.",
@@ -86,6 +104,27 @@
             "bloglink": "https://forge.autodesk.com/blog/custom-tools-forge-viewer",
             "includeinlist": "true",
             "gif": "extension.gif"
+        },
+        {
+            "name": "Edit2dExtension",
+            "displayname": "Edit2D Extension",
+            "description": "Purpose of this extension is to show some Edit2D functionality.",
+            "options": {},
+            "loadonstartup": "false",
+            "filestoload": {
+                "jsfiles": [
+                    "main.js"
+                ],
+                "cssfiles": []
+            },
+            "gif": "extension.gif",
+            "includeinlist": "true",
+            "externaldependencies": [
+                {
+                    "type": "css",
+                    "link": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+                }
+            ]
         },
         {
             "name": "GoogleMapsLocator",
@@ -194,6 +233,23 @@
             "bloglink": "https://github.com/autodesk-forge/forge-extensions/tree/master/public/extensions/NestedViewerExtension/README.md"
         },
         {
+            "name": "PhasingExtension",
+            "displayname": "Phasing Extension",
+            "description": "APS extension to generate Gantt chart connected with objects from the model",
+            "options": {},
+            "viewerversion": "7.*",
+            "loadonstartup": "false",
+            "filestoload": {
+                "cssfiles": [],
+                "jsfiles": [
+                    "main.js"
+                ]
+            },
+            "bloglink": "TBD",
+            "includeinlist": "true",
+            "gif": "extension.gif"
+        },
+        {
             "name": "PotreeExtension",
             "displayname": "Potree Point Clouds",
             "description": "Forge Viewer extension for loading and rendering Potree point clouds.",
@@ -223,6 +279,32 @@
             "gif": "extension.gif",
             "includeinlist": "true",
             "bloglink": ""
+        },
+        {
+            "name": "RoomLocatorExtension",
+            "displayname": "Room Locator",
+            "description": "A APS Viewer extension for finding the room where the selected object is located",
+            "options": {
+                "alertOnDefaultFailure": true,
+                "autoUnloadOnNoAecModelData": true
+            },
+            "editoptions": "true",
+            "viewerversion": "7.*",
+            "loadonstartup": "false",
+            "filestoload": {
+                "cssfiles": [],
+                "jsfiles": [
+                    "main.js"
+                ]
+            },
+            "bloglink": "",
+            "includeinlist": "true",
+            "externaldependencies": [
+                {
+                    "type": "js",
+                    "link": "https://cdn.jsdelivr.net/gh/Wilt/ThreeCSG@develop/ThreeCSG.js"
+                }
+            ]
         },
         {
             "name": "TabSelectionExtension",
